@@ -9,19 +9,8 @@
     <span class="badge">{{hero.id}}</span>{{hero.name}}
     </li>
 </ul>
+<hero-detail [hero]="selectedHero"></hero-detail>
 
-<div *ngIf="selectedHero">
-  <h2>
-  {{selectedHero.name}} details!
-</h2>
-<div>
-  <label>Id: </label>{{selectedHero.id}}
-</div>
-<div>
-  <label>Name: </label>
-  <input [(ngModel)]="selectedHero.name" placeholder="Name">
-</div>
-</div>
 </div>
 
 
